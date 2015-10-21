@@ -10,6 +10,9 @@
  * with the HC-SR04 ultrasonic trasducer pair sensor. The interrupt modules 
  * of the code are derived from http://users.ece.utexas.edu/~valvano/arm/ 
  * 
+ * This code turns On the on board LED when there is an obstacle at a prticular distance
+ * and turns off the LED if the obstacle moves away from that distance
+ * 
  * The interfacing of the tiva module with the sensor is as follows:
  * 		HC-SR04					  TM4C1294
  * 		  Vcc	 ===============> 	+5v
