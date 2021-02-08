@@ -100,7 +100,7 @@ void GPIOPortN_Handler(void){
 int main(void){
 	unsigned long period = 960000; 	          /* reload value to Timer0A to generate 60ms delay */
 	PortFunctionInit();				                /* initialize the GPIO ports */
-	UART_Init();              		            /* initialize UART */
+	//UART_Init();              		            /* initialize UART */
 	Interrupt_Init();				                  /* Initialize hardware interrupt on PN3*/
 	Timer0A_Init(period);			                /* initialize Timer0A and configure the interrupt */
 	IntGlobalEnable();        		            /* globally enable interrupt */
